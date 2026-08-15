@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Job Tinder</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="brand">Job<span>Tinder</span></div>
+        <div class="subtitle">Swipe. Match. Apply.</div>
+      </div>
+      <div class="top-actions">
+        <button id="syncBtn" class="ghost">↻ Sync</button>
+        <button id="likedBtn" class="ghost">♥ Matches</button>
+        <button id="settingsBtn" class="ghost">⚙ Skills</button>
+      </div>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="deck-wrap">
+      <div id="deck" class="deck"></div>
+      <div class="controls">
+        <button id="passBtn" class="round pass" title="Pass">×</button>
+        <button id="likeBtn" class="round like" title="Like">♥</button>
+      </div>
+      <p class="hint">Drag left to pass · drag right to like</p>
+    </section>
+
+    <aside id="panel" class="panel hidden">
+      <div class="panel-inner">
+        <button id="closePanel" class="close">×</button>
+        <h2 id="panelTitle">Profile</h2>
+        <div id="panelBody"></div>
+      </div>
+    </aside>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
